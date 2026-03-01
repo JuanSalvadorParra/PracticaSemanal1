@@ -12,7 +12,7 @@ int main() {
 
     Animal* animal = perro;  // Creo un puntero animal y le asigno un perro
 
-    Mamifero* mamifero= perro; // Creo un puntero mamifero y le asigno un perro
+    Mamifero* mamifero = perro; // Creo un puntero mamifero y le asigno un perro
 
     // Uso metodos de de animal desde cada puntero
     cout  << endl << "Puntero animal: " << endl;
@@ -42,9 +42,8 @@ int main() {
     else
         cout << endl << "Downcast fallido" << endl;
 
-
-
-    Animal* animal2 = new Mamifero();
+    Mamifero* mamifero1 = new Mamifero();
+    Animal* animal2 = mamifero1;
 
     Perro *perro3 = dynamic_cast<Perro*>(animal2); // Creo un puntero perro y compruebo con dinamic_cast si animal2 apunta a un perro
     // Como animal2 no esta apuntando a un perro devuelve nullptr
