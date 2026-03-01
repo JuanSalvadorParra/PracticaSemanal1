@@ -37,7 +37,7 @@ int main() {
 
     if (perro2 == nullptr) {
         cout << endl << "Downcast exitoso" << endl;
-        perro2->sonido();
+        perro2->babear();
     }
     else
         cout << endl << "Downcast fallido" << endl;
