@@ -6,7 +6,7 @@ int main() {
 
     ////////////////////////////////////////////// ACTIVIDAD 1 ////////////////////////////////////////////////
 
-    cout << "Actividad 1: " << endl;
+    cout << "Actividad 1: Relaciones y Upcast " << endl;
 
     Perro *perro = new Perro(); // Creo un nuevo objeto perro
 
@@ -14,7 +14,7 @@ int main() {
 
     Mamifero* mamifero = perro; // Creo un puntero mamifero y le asigno un perro
 
-    // Uso metodos de de animal desde cada puntero
+    // Uso metodos de animal desde cada puntero
     cout  << endl << "Puntero animal: " << endl;
     animal->descripcion();
     animal->sonido();
@@ -29,7 +29,7 @@ int main() {
 
     ////////////////////////////////////////////// ACTIVIDAD 2 ////////////////////////////////////////////////
 
-    cout << endl << "Actividad 2: " << endl;
+    cout << endl << "Actividad 2: Downcast " << endl;
 
     Animal* animal1 = new Perro(); // Creo un puntero animal que apunta a un perro
 
