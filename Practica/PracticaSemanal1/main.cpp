@@ -4,6 +4,8 @@ using namespace std;
 
 int main() {
 
+    ////////////////////////////////////////////// ACTIVIDAD 1 ////////////////////////////////////////////////
+
     cout << "Actividad 1: " << endl;
 
     Perro *perro = new Perro();
@@ -22,13 +24,12 @@ int main() {
 
     cout << endl;
 
-    delete perro;
-    delete mamifero;
-    delete animal;
 
-    cout << "Fin actividad 1 " << endl;
+    cout << " -> Fin actividad 1 <- " << endl;
 
-    cout << endl << "Actividad 2: " << endl;
+    ////////////////////////////////////////////// ACTIVIDAD 2 ////////////////////////////////////////////////
+
+    cout << endl << "Actividad 2: " << endl << endl;
 
     Animal* animal1 = new Perro();
     try {
@@ -38,6 +39,14 @@ int main() {
         catch (runtime_error& error) {
             cout << "Error de creacion el perro" << endl;
         }
+
+    cout << endl;
+    cout << " -> Fin actividad 2 <- " << endl << endl;
+
+    delete perro;
+    delete mamifero;
+    delete animal;
+    delete animal1;
 
     return 0;
 }
