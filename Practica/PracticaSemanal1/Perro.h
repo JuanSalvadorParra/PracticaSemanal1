@@ -14,6 +14,7 @@ private:
 public:
     void descripcion() override;
     void sonido() override;
+    void babear();
     ~Perro() override;
 };
 

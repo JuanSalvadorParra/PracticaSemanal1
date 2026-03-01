@@ -14,6 +14,10 @@ void Perro::sonido() {
     cout << "*Ladridos*" << endl;
 }
 
+void Perro::babear() {
+    cout << "*Babear*" << endl;
+}
+
 Perro::~Perro() {
     cout << "Perro destroyed" << endl;
 }

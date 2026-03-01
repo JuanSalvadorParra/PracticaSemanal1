@@ -32,13 +32,15 @@ int main() {
     cout << endl << "Actividad 2: " << endl << endl;
 
     Animal* animal1 = new Perro();
-    try {
-        Perro* perro2 = dynamic_cast<Perro*>(animal1);
+
+    Perro* perro2 = dynamic_cast<Perro*>(animal1);
+
+    if (perro2 == nullptr) {
+        cout << endl << "Downcast exitoso" << endl;
         perro2->sonido();
     }
-        catch (runtime_error& error) {
-            cout << "Error de creacion el perro" << endl;
-        }
+    else
+        cout << endl << "Downcast fallido" << endl;
 
     cout << endl;
     cout << " -> Fin actividad 2 <- " << endl << endl;
