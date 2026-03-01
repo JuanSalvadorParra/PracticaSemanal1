@@ -44,6 +44,7 @@ int main() {
 
     Mamifero* mamifero2 = new Mamifero();
     Animal* animal2 = dynamic_cast<Perro*>(mamifero2);
+
     if (animal2 != nullptr) {
         cout << endl << "Downcast exitoso" << endl;
         animal2->sonido();
