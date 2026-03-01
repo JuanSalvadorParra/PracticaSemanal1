@@ -1,15 +1,15 @@
 # Actividad 2
 
-## Proceso del downcast
+## 1️⃣ Proceso del downcast
 
 El **downcast** consiste en convertir un puntero de la clase base a una clase derivada.  
-Sin embargo, **no siempre es seguro**, porque el objeto real puede no ser de la clase derivada.
+Pero **no siempre es seguro**, porque el objeto real puede no ser de la clase derivada.
 
 
 En este proceso se utiliza `dynamic_cast`, el cual:
 
 - Verifica en tiempo de ejecución el tipo real del objeto.
-- Comprueba si el objeto apuntado realmente es de tipo `Perro`.
+- Comprueba si el objeto apuntado realmente es de cierto tipo.
 - Si la conversión es válida, devuelve un puntero válido.
 - Si no es válida, devuelve `nullptr`.
 
@@ -40,7 +40,7 @@ else
     cout << endl << "Downcast fallido" << endl; 
 ```
 
-En el primer caso, como el puntero `animal1` realmente esta apuntando a un `perro` él `dinamic_cast` se completa con exito y se ejecuta la funcion exclusiva de perro `"babear()"`.
+En el primer caso, como el puntero `animal1` realmente esta apuntando a un `perro` él `dinamic_cast` devuelve un puntero valido y se ejecuta la funcion exclusiva de perro `"babear()"`.
 
 En el segundo caso, el puntero `animal1` apunta a un `Mamifero`, no un `Perro`, por lo tanto el `dynamic_cast` devuelve `nullptr` y se envia un mensaje de `"Downcast fallido"`.
 
