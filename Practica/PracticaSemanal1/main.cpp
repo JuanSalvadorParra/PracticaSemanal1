@@ -59,9 +59,8 @@ int main() {
     cout << " -> Fin actividad 2 <- " << endl << endl; // Fin actividad 2
 
     delete perro;
-    delete mamifero;
-    delete animal;
     delete animal1;
+    delete animal2;
 
     return 0; // Fin del main
 }
